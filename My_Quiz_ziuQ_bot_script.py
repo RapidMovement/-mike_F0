@@ -8,14 +8,12 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from aiogram import F
 from quiz_data import quiz_data
 from database import get_quiz_index, update_quiz_index, create_table, increment_correct_answers, get_correct_answers, reset_correct_answers
+from config import API_TOKEN
 
 nest_asyncio.apply()
 
 # Логирование
 logging.basicConfig(level=logging.INFO)
-
-# Токен от BotFather
-API_TOKEN = '8197356263:AAG4NTHEPUyTWiQ9TWV9jZxKpuVjzEWACUg'
 
 # Объект бота
 bot = Bot(token=API_TOKEN)
